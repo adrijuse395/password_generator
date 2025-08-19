@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator - Create Strong & Secure Passwords Online</title>
+        <meta name="description" content="Free online password generator. Create strong and secure passwords instantly with customizable options for length, symbols, numbers, and more. Stay safe online.">
+        <meta name="keywords" content="password generator, secure password, strong password, random password, online tool, cybersecurity, password strength, safe password, create password">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Secure Password Generator</h1>
+        </header>
+
+        <main>
+            <section id="intro">
+                <h2>1. Introduction: Why strong passwords matter</h2>
+                <p>In today’s digital world, much of our personal and professional life is stored online: email, social media, online banking, and cloud services. A weak password is like leaving your front door unlocked — anyone could break in.</p>
+                <p>Cybercriminals use advanced techniques such as brute force attacks or dictionary attacks to crack weak passwords. This is why it is essential to create passwords that are long, random, and unique for every account.</p>
+            </section>
+
+            <section id="variables">
+                <h2>2. Key factors for creating secure passwords</h2>
+                <ul>
+                    <li><strong>Lenght</strong>: The longer the password, the harder it is to crack. A minimum of 12 characters is recommended.</li>
+                    <li><strong>Complexity</strong>: Combine uppercase letters, lowercase letters, numbers, and special characters.</li>
+                    <li><strong>Uniqueness</strong>: Never reuse the same password across different accounts.</li>
+                    <li><strong>Unpredictability</strong>: Avoid common words, names, or personal information like birthdays.</li>
+                </ul>
+            </section>
+
+            <section id="strengh-table">
+                <h2>3. Password strength table (visual reference)</h2>
+                <p>Different studies show the estimated time it takes to crack passwords depending on their length and complexity.</p>
+                <p>Here you will see a visual table that illustrates how much faster weak passwords can be hacked compared to stronger ones.</p>                    
+                <div class="image-placeholder">
+                    <img src="images/table_time_to_crack_passwords.jpg" alt="Table showing password cracking times based on password length and complexity">
+                </div>
+            </section>
+
+            <section id="options">
+                <h2>Customize && Generate Your Password</h2>
+                <form id="password-form">
+                    <label for="length">Password Length:</label>
+                    <input type="number" id="length" name="length" min="4" max="128" value="12">
+
+                    <fieldset>
+                        <legend>Character Types</legend>
+                        <label><input type="checkbox" id="lowercase" checked> Lowercase (a-z)</label>
+                        <label><input type="checkbox" id="uppercase" checked> Uppercase (A-Z)</label>
+                        <label><input type="checkbox" id="numbers" checked> Numbers (0-9)</label>
+                        <label><input type="checkbox" id="symbols"> Symbols (!@#$%)</label>
+                        <label><input type="checkbox" id="spaces"> Spaces</label>
+                        <label><input type="checkbox" id="other"> Other (custom)</label>
+                    </fieldset>
+
+                    <button type="button" id="generate-btn">Generate Password</button>
+                </form>
+            </section>
+
+            <section id="result">
+                <h2>Your Password</h2>
+                <div id="password-output">Your password will appear here</div>
+                <button id="copy-btn">Copy to Clipboard</button>
+                <div id="strength-meter">Strength: <span id="strength-text">Unknown</span></div>
+            </section>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
