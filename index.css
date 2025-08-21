@@ -32,7 +32,7 @@ main {
 section {
     background-color: #1a1a1a;
     border-radius: 12px;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 30px;
     box-shadow: 0 0 20px rgba(0, 255, 213, 0.2);
 }
@@ -72,46 +72,72 @@ ul li {
 form {
     display: flex;
     flex-direction: column;
+    font-size: 1.2rem;
+    gap: 15px;
 }
 
 label {
     margin-bottom: 10px;
+    margin-left: 30px;
     font-weight: 500;
     color: #e0e0e0;
-    margin-right: 30px;
+    font-size: 2.5rem;
+}
+
+label[for="length"] {
+    margin-top: 40px;
 }
 
 input[type="number"] {
-    padding: 14px;
-    margin-bottom: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
     border-radius: 6px;
     border: 1px solid #00ffd5;
     background-color: #111;
     color: #e0e0e0;
-    font-size: 2rem;
-    width: 100%;
+    font-size: 3rem;
+    width: 50%;
+    text-align: left;
+    
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Edge, Safari */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 fieldset {
     border: 1px solid #00ffd5;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 legend {
     padding: 0 10px;
     color: #00ffd5;
     font-weight: bold;
+    font-size: 2.5rem;
 }
 
 input[type="checkbox"] {
-    margin-right: 8px;
-    transform: scale(2);
+    margin-right: 10px;
+    transform: scale(1.6);
 }
 
 button {
-    padding: 12px 20px;
+    padding: 14px 24px;
     background-color: #00ffd5;
     color: #0d0d0d;
     border: none;
@@ -130,22 +156,25 @@ button:hover {
 
 #password-output {
     background-color: #111;
-    padding: 14px;
+    padding: 20px;
     border-radius: 8px;
     border: 1px solid #00ffd5;
     font-family: 'Courier New', monospace;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
     word-break: break-all;
+    text-align: center;
 }
 
 #strength-meter {
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: bold;
+    font-size: 2.5rem;
 }
 
 #strength-text {
     color: #00ffd5;
+    font-size: 2.5rem;
 }
 
 footer {

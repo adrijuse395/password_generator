@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Password Generator - Create Strong & Secure Passwords Online</title>
-        <meta name="description" content="Free online password generator. Create strong and secure passwords instantly with customizable options for length, symbols, numbers, and more. Stay safe online.">
-        <meta name="keywords" content="password generator, secure password, strong password, random password, online tool, cybersecurity, password strength, safe password, create password">
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        <link rel="stylesheet" href="index.css">
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator - Create Strong & Secure Passwords Online</title>
+    <meta name="description" content="Free online password generator. Create strong and secure passwords instantly with customizable options for length, symbols, numbers, and more. Stay safe online.">
+    <meta name="keywords" content="password generator, secure password, strong password, random password, online tool, cybersecurity, password strength, safe password, create password">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Secure Password Generator">
+    <meta property="og:description" content="Create strong and secure passwords instantly online.">
+    <meta property="og:image" content="https://calorie-calculator-bmr.netlify.app/images/favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://calorie-calculator-bmr.netlify.app">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
 
     <body>
         <header>
@@ -44,8 +54,9 @@
             <section id="options">
                 <h2>Customize && Generate Your Password</h2>
                 <form id="password-form">
-                    <label for="length">Password Length:</label>
-                    <input type="number" id="length" name="length" min="4" max="128" value="12">
+                    <label for="length">Password Length:
+                        <input type="number" id="length" name="length" min="4" max="128" value="12">
+                    </label>
 
                     <fieldset>
                         <legend>Character Types</legend>
@@ -65,7 +76,7 @@
                 <h2>Your Password</h2>
                 <div id="password-output">Your password will appear here</div>
                 <button id="copy-btn">Copy to Clipboard</button>
-                <div id="strength-meter">Strength: <span id="strength-text">Unknown</span></div>
+                <div id="strength-meter">Aproximate time to crack your password: <span id="strength-text">Unknown</span></div>
             </section>
         </main>
 
